@@ -1,13 +1,13 @@
 {
-  "name": "type-node",
+  "name": "typescript-node-tutorial",
   "version": "1.0.0",
   "description": "learn nodejs with typescript",
   "type": "module",
   "main": "index.ts",
   "scripts": {
     "build": "npm run build:tsc",
-    "build:tsc": "tsc ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:tsc": "tsc && npm run tsc:watch",
+    "tsc:watch":"npx tsc --watch"
   },
   "keywords": [],
   "author": "",

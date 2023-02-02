@@ -1,3 +1,2 @@
-import giveName from  "./src" ;
+export * from  "./src" ;
 
-export default giveName;
