@@ -6,10 +6,14 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "dev": "npx nodemon",
-    "build": "npm run build:tsc",
-    "build:tsc": "tsc && npm run tsc:watch",
-    "tsc:watch": "npx tsc --watch",
-    "clean": "rm -rf dist "
+    "prod": "tsc",
+    "watch": "npx tsc --watch",
+    "clean": "rm -rf dist ",
+    
+    "init:pg":"mkdir ./src/playground/lib && cd ./src/playground && tsc --init -p .",
+    "start:pg":"node lib/index",
+    "watch:pg":"tsc --watch",
+    "clean:pg":"rm -rf src/playground/*"
   },
   "keywords": [],
   "author": "",
