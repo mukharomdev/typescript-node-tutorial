@@ -4,7 +4,7 @@
   "description": "learn nodejs with typescript",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node --loader ts-node/esm index.ts",
+    "start": "node ./dist/index.js",
     "start:dev": "npx nodemon",
     "build": "npm run build:tsc",
     "build:tsc": "tsc && npm run tsc:watch",
